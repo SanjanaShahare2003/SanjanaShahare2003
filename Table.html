@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Addition</title>
+    </head>
+    <script>
+        function addition()
+        {
+            var a,b ,c
+            a=document.getElementById("txtfirst").value;
+            b=document.getElementById("txtsecond").value;
+            a=parseInt(a)
+            b=parseInt(b)
+            c=a+b
+           // document.write(c)
+          alert(c)
+        }
+    </script>
+    <body>
+        <center>
+            <table border="2">
+                <th>Addition</th>
+                <tr>
+                    <td>Enter first number</td>
+                    <td><input type="text"  id="txtfirst" ></td>
+                </tr>
+                <tr>
+                    <td>Enter second number</td>
+                    <td><input type="text"  id="txtsecond" ></td>
+
+                </tr>
+                <tr>
+                    <td><input type="button" value="Addition" onclick="addition()"></td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
